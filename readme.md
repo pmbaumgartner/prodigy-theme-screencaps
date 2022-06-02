@@ -1,6 +1,6 @@
 # Prodigy Custom Theme Screencaps
 
-See: https://prodi.gy/docs/api-web-app#themes for options
+See: https://prodi.gy/docs/api-web-app#themes for options. Shows what gets changed by coloring it with [`#FF5F1F`](https://www.colorhexa.com/ff5f1f) (orange).
 
 ## `accept` 
 
