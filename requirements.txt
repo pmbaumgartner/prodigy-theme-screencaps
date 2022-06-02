@@ -1,0 +1,2 @@
+playwright==1.22.0
+srsly==2.4.3
