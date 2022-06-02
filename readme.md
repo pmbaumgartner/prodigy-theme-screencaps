@@ -1,6 +1,8 @@
 # Prodigy Custom Theme Screencaps
 
-See: https://prodi.gy/docs/api-web-app#themes for options## `accept` 
+See: https://prodi.gy/docs/api-web-app#themes for options
+
+## `accept` 
 
 ![accept](screenshots/01_accept.png)
 

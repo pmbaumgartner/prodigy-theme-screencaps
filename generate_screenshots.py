@@ -62,7 +62,7 @@ color_attributes = [
 ]
 
 Path("readme.md").write_text(
-    "# Prodigy Custom Theme Screencaps\n\nSee: https://prodi.gy/docs/api-web-app#themes for options"
+    "# Prodigy Custom Theme Screencaps\n\nSee: https://prodi.gy/docs/api-web-app#themes for options\n\n"
 )
 
 
