@@ -24,14 +24,16 @@ EXAMPLE_DATA = [
         "text": "This is an example document",
     }
 ]
-NEW_COLOR = "#FF5F1F"
 
+NEW_COLOR = "#00F2DE"
 temp_jsonl = NamedTemporaryFile(suffix=".jsonl")
 srsly.write_jsonl(temp_jsonl.name, EXAMPLE_DATA)
 
-temp_jsonl_patterns = NamedTemporaryFile(suffix=".jsonl")
 PATTERN = {"label": "LABEL!", "pattern": [{"lower": "document"}]}
+temp_jsonl_patterns = NamedTemporaryFile(suffix=".jsonl")
 srsly.write_jsonl(temp_jsonl_patterns.name, [PATTERN])
+
+
 color_attributes = [
     "accept",
     "reject",
@@ -61,8 +63,15 @@ color_attributes = [
     "colorCardTitle",
 ]
 
+colorstr = NEW_COLOR.lstrip("#")
 Path("readme.md").write_text(
-    "# Prodigy Custom Theme Screencaps\n\nSee: https://prodi.gy/docs/api-web-app#themes for options\n\n"
+    "\n\n".join(
+        [
+            "# Prodigy Custom Theme Screencaps",
+            "See https://prodi.gy/docs/api-web-app#themes for options.",
+            f"Shows what gets changed by coloring it with [![{colorstr}](https://img.shields.io/static/v1?label=Color&message={colorstr}&color={colorstr}&style=flat-square)](https://www.colorhexa.com/{colorstr}). ",
+        ]
+    )
 )
 
 
@@ -82,7 +91,7 @@ def run_prodigy(args: List[str]):
     # when just SIGINT or SIGTERM is sent.
     prodigy_server.terminate()
     prodigy_server.wait(10)
-    sleep(3)
+    sleep(1)
 
 
 for i, attribute in enumerate(color_attributes, 1):
