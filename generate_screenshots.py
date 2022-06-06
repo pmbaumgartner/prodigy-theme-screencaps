@@ -70,6 +70,7 @@ Path("readme.md").write_text(
             "# Prodigy Custom Theme Screencaps",
             "See https://prodi.gy/docs/api-web-app#themes for options.",
             f"Shows what gets changed by coloring it with [![{colorstr}](https://img.shields.io/static/v1?label=Color&message={colorstr}&color={colorstr}&style=flat-square)](https://www.colorhexa.com/{colorstr}). ",
+            "",
         ]
     )
 )

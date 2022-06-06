@@ -2,7 +2,9 @@
 
 See https://prodi.gy/docs/api-web-app#themes for options.
 
-Shows what gets changed by coloring it with [![00F2DE](https://img.shields.io/static/v1?label=Color&message=00F2DE&color=00F2DE&style=flat-square)](https://www.colorhexa.com/00F2DE). ## `accept` 
+Shows what gets changed by coloring it with [![00F2DE](https://img.shields.io/static/v1?label=Color&message=00F2DE&color=00F2DE&style=flat-square)](https://www.colorhexa.com/00F2DE). 
+
+## `accept` 
 
 ![accept](screenshots/01_accept.png)
 
